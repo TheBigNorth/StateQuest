@@ -2,3 +2,40 @@ $baseline: .6rem;
 
 $body-font-family: 'Nunito', sans-serif;
 $header-font-family: 'Didact Gothic', sans-serif;
+
+//Gutters & Widths
+$max-width: 1024px;
+$gutter: 20px;
+$section-top-padding: $baseline * 5;
+$section-top-padding-mobile: $baseline * 2;
+$element-bottom-padding: $baseline * 2;
+$element-bottom-padding-mobile: $baseline * 2;
+$section-bottom-padding: $baseline * 3;
+$section-bottom-padding-mobile: $baseline * 2;
+
+//Breakpoints
+$medium: 768px;
+$large: 992px;
+
+//Nav
+$nav-link-padding: $gutter;
+$nav-break: 700px;
+
+//Font Size
+$body-font-size: 1.5rem;
+$heading-big: (mobile: 2rem, desktop: 3rem);
+
+//Colors
+$slateBlue: #292730;
+$lightBlue: #727273;
+$red: #e40e0e;
+$white: #ffffff;
+
+//Button
+$button-height: $baseline * 6;
+$button-bg-color: $slateBlue;
+$button-font-color: $white;
+$button-horizontal-padding: 40px;
+$button-text-transform: uppercase;
+
+$button-bg-color-hover: lighten($slateBlue, 10%);

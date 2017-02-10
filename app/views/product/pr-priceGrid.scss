@@ -1,0 +1,44 @@
+@import '../../../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import '../../scss/base/variables';
+
+.pr-priceGrid {
+
+    border: 1px solid $slateBlue;
+    display: table;
+    width: 100%;
+
+    &__price {
+        border-right: 1px solid $slateBlue;
+        display: table-cell;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        vertical-align: middle;
+    }
+
+    &__button-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__stock {
+        display: table-cell;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        vertical-align: middle;
+    }
+
+    &__buy-button {
+        background-color: $button-bg-color;
+        color: $button-font-color;
+        cursor: pointer;
+        float: right;
+        height: $button-height;
+        padding-left: $button-horizontal-padding;
+        padding-right: $button-horizontal-padding;
+        text-transform: $button-text-transform;
+
+        &:hover {
+            background-color: $button-bg-color-hover;
+        }
+    }
+}

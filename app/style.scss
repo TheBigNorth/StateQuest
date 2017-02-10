@@ -1,18 +1,10 @@
+@import '../bower_components/breakpoint-sass/stylesheets/breakpoint';
 @import 'scss/vendors/reset';
 @import 'scss/base/variables';
+@import 'scss/base/typography';
+@import 'scss/base/form';
 
-body {
-    background-color: #f9f8f8;
-    line-height: $baseline * 2;
-    font-size: 1rem;
-    font-weight: 300;
-    font-family: $body-font-family;
-}
-
-h1, h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: $baseline * 6;
-    margin: 0;
-    font-family: $header-font-family;
+img {
+    max-width: 100%;
+    height: auto;
 }

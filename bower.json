@@ -1,0 +1,20 @@
+{
+  "name": "statequest",
+  "description": "Product Page",
+  "authors": [
+    "Gemma Black <gemma@thebignorth.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "css-hamburgers": "^0.7.0"
+  }
+}

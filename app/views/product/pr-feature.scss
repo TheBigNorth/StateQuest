@@ -1,0 +1,118 @@
+@import '../../../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import '../../scss/base/variables';
+
+.pr-feature {
+    padding-bottom: $section-bottom-padding-mobile;
+    padding-top: $section-top-padding-mobile;
+
+    &__mobile-title {
+        font-family: $header-font-family;
+        font-size: map-get($heading-big, 'mobile');
+        font-weight: 400;
+        line-height: $baseline * 3;
+        margin-bottom: $element-bottom-padding;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        text-align: center;
+    }
+
+    &__image-container {
+        margin-bottom: $element-bottom-padding-mobile;
+    }
+
+    &__pre-title {
+        color: $red;
+        display: block;
+        font-family: $header-font-family;
+        font-weight: bold;
+        margin-bottom: $baseline * 2;
+        text-transform: uppercase;
+    }
+
+    &__body {
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+
+    &__title {
+        margin-bottom: $element-bottom-padding-mobile;
+    }
+
+    &__description {
+
+        margin-bottom: $element-bottom-padding-mobile;
+
+        p {
+            margin-bottom: $element-bottom-padding-mobile;
+        }
+
+        ul {
+            list-style: disc;
+            list-style-position: inside;
+        }
+
+        li {
+            margin-bottom: $baseline;
+        }
+    }
+
+    @include breakpoint($medium) {
+
+        padding-bottom: $section-bottom-padding;
+        padding-top: $section-top-padding;
+
+        &__mobile-title {
+            font-size: map-get($heading-big, 'desktop');
+            line-height: $baseline * 4;
+            padding-bottom: $section-bottom-padding;
+        }
+
+        &__inner {
+            margin: 0 auto;
+            max-width: $max-width;
+            padding-left: $gutter;
+            padding-right: $gutter;
+        }
+
+        &__image-container {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+        }
+
+        &__image {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__body {
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+        }
+
+        &--reversed {
+            .pr-feature__image-container {
+                transform: translateX(100%);
+            }
+
+            .pr-feature__body {
+                transform: translate(-100%);
+            }
+        }
+    }
+
+    @include breakpoint($large) {
+        &__body {
+            margin-left: 10%;
+            width: 40%;
+        }
+
+        &--reversed {
+            .pr-feature__body {
+                transform: translate(-150%);
+            }
+        }
+    }
+}

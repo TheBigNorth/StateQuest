@@ -1,0 +1,140 @@
+$hamburgers-padding-x: 10px;
+$hamburgers-padding-y: 15px;
+$hamburger-layer-width : 28px;
+$hamburger-layer-height : 3px;
+$hamburger-types     : (squeeze);
+
+@import '../../../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import '../../scss/base/variables';
+@import "../../../bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.nav {
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+
+    .hamburger {
+        display: inline-block;
+        float: right;
+        vertical-align: middle;
+
+        &:active,
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__inner {
+        margin: 0 auto;
+        max-width: $max-width;
+        position: relative;
+    }
+
+    &__item {
+        border-top: 1px solid gainsboro;
+        text-align: center;
+    }
+
+    &__links {
+        display: none;
+    }
+
+    &__links--active {
+        display: block;
+    }
+
+    &__link {
+        color: $slateBlue;
+        display: block;
+        font-weight: bold;
+        line-height: $baseline * 5;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: gainsboro;
+        }
+    }
+
+    &__logo-link {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &:hover {
+            background-color: gainsboro;
+        }
+    }
+
+    &__home-logo {
+        display: inline-block;
+        padding-bottom: $baseline * 2;
+        padding-left: $nav-link-padding;
+        padding-right: $nav-link-padding;
+        padding-top: $baseline * 2;
+        vertical-align: middle;
+    }
+
+    &__svg-logo {
+        height: $baseline * 5;
+        width: auto;
+    }
+
+    &__cart {
+        background-color: $slateBlue;
+        bottom: 0;
+        display: none;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__cart-text {
+        color: $white;
+        display: block;
+        font-family: $header-font-family;
+        font-weight: bold;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-top: 15px;
+        padding-right: 50px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint($nav-break) {
+        &__links {
+            display: inline-block;
+            padding-top: $baseline;
+            padding-bottom: $baseline;
+            vertical-align: middle;
+        }
+
+        &__item {
+            border: none;
+            display: inline-block;
+            padding-left: $nav-link-padding;
+            padding-right: $nav-link-padding;
+            vertical-align: middle;
+        }
+
+        &__link {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &__logo-link {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        &__cart {
+            display: inline-block;
+        }
+    }
+}
