@@ -6,6 +6,7 @@ import React from 'react';
 class Product extends React.Component {
     render() {
         return <div>
+            <img src="dist/images/car.jpg" />
             <div className="pr-feature">
                 <div className="pr-feature__inner">
                     <div className="pr-feature__mobile-title">

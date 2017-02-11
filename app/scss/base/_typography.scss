@@ -7,8 +7,12 @@ body {
     color: $slateBlue;
     line-height: $baseline * 3;
     font-size: $body-font-size;
-    font-weight: 300;
+    font-weight: 400;
     font-family: $body-font-family;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {

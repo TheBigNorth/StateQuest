@@ -1,0 +1,25 @@
+@import '../../scss/base/variables';
+
+.nav-TopBar {
+
+    &__central-msg {
+        border-bottom: 1px solid $grey;
+        display: block;
+        font-family: $body-font-family;
+        font-size: $body-font-size-small;
+        font-weight: bold;
+        letter-spacing: $body-padded-letter-spacing;
+        padding-bottom: $baseline;
+        padding-top: $baseline;
+        text-align: center;
+        text-transform: uppercase;
+        word-spacing: $body-padded-word-spacing;
+    }
+
+    @media (min-width: $large) {
+        &__central-msg {
+            font-size: $body-font-size;
+        }
+    }
+
+}

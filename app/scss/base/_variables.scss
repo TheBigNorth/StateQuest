@@ -1,7 +1,7 @@
 $baseline: .6rem;
 
-$body-font-family: 'Nunito', sans-serif;
-$header-font-family: 'Didact Gothic', sans-serif;
+$body-font-family: 'Lato', sans-serif;
+$header-font-family: 'Lato', sans-serif;
 
 //Gutters & Widths
 $max-width: 1024px;
@@ -15,7 +15,7 @@ $section-bottom-padding-mobile: $baseline * 2;
 
 //Breakpoints
 $medium: 768px;
-$large: 992px;
+$large: 1024px;
 
 //Nav
 $nav-link-padding: $gutter;
@@ -23,13 +23,17 @@ $nav-break: 700px;
 
 //Font Size
 $body-font-size: 1.5rem;
+$body-font-size-small: 1.1rem;
 $heading-big: (mobile: 2rem, desktop: 3rem);
+$body-padded-letter-spacing: 4px;
+$body-padded-word-spacing: 1px;
 
 //Colors
 $slateBlue: #292730;
 $lightBlue: #727273;
 $red: #e40e0e;
 $white: #ffffff;
+$grey: #ddd;
 
 //Button
 $button-height: $baseline * 6;

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --display-error-details --config webpack.config.js"
+    "start": "concurrently --kill-others \"npm run webpack\" \"npm run server\"",
+    "webpack" : "webpack --display-error-details --config webpack.config.js",
+    "server": "watch-http-server"
   },
   "keywords": [],
   "author": "",
