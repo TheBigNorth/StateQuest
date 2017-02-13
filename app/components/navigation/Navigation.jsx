@@ -15,11 +15,13 @@ class Navigation extends React.Component {
         this.toggleNavigation = this.toggleNavigation.bind(this);
     }
 
+    /**
+     * @todo if is the same page - don't do anything at all
+     */
     toggleNavigation() {
         this.setState((prevState, props) => {
             return { isMenuActive: !prevState.isMenuActive }
         });
-        console.log(this.state);
     }
 
     render() {
@@ -46,17 +48,17 @@ class Navigation extends React.Component {
                 </Link>
                 <div className="nav__divider"></div>
                 <ul className={"nav-Menu " + (this.state.isMenuActive ? 'nav-Menu--active' : '')}>
-                    <li className="nav-Menu__item">
+                    <li className="nav-Menu__item" onClick={this.toggleNavigation}>
                         <Link to="/products/hydra" activeClassName="active" className="nav-Menu__link">
                             Hydra
                         </Link>
                     </li>
-                    <li className="nav-Menu__item">
+                    <li className="nav-Menu__item" onClick={this.toggleNavigation}>
                         <Link to="/about" activeClassName="active" className="nav-Menu__link">
                             About Us
                         </Link>
                     </li>
-                    <li className="nav-Menu__item">
+                    <li className="nav-Menu__item" onClick={this.toggleNavigation}>
                         <Link to="contact" activeClassName="active" className="nav-Menu__link">
                             Contact
                         </Link>

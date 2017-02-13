@@ -9,6 +9,12 @@ $hamburger-types     : (squeeze);
 @import "../../../bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .nav {
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
     .hamburger {
         display: inline-block;
     }

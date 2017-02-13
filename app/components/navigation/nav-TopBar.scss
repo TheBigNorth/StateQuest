@@ -3,7 +3,7 @@
 .nav-TopBar {
 
     &__central-msg {
-        border-bottom: 1px solid $grey;
+        box-shadow: 0 1px 0 0 $grey;
         display: block;
         font-family: $body-font-family;
         font-size: $body-font-size-small;
